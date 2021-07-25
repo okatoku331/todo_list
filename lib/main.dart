@@ -28,6 +28,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  List<String> titleList = ['google', '楽天', 'amazon'];
 
   void _incrementCounter() {
     setState(() {
@@ -45,21 +46,21 @@ class _MyHomePageState extends State<MyHomePage> {
         children: [
           ListTile(
             leading: Icon(Icons.vpn_key),
-            title: Text('google'),
+            title: Text(titleList[0]),
           ),
           Divider(
             color: Colors.blue,
           ),
           ListTile(
             leading: Icon(Icons.vpn_key),
-            title: Text('楽天'),
+            title: Text(titleList[1]),
           ),
           Divider(
             color: Colors.blue,
           ),
           ListTile(
             leading: Icon(Icons.vpn_key),
-            title: Text('amazon'),
+            title: Text(titleList[2]),
           ),
           Divider(
             color: Colors.blue,
