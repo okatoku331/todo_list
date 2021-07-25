@@ -44,12 +44,15 @@ class _MyHomePageState extends State<MyHomePage> {
       body: ListView(
         children: [
           ListTile(
+            leading: Icon(Icons.vpn_key),
             title: Text('google'),
           ),
           ListTile(
+            leading: Icon(Icons.vpn_key),
             title: Text('楽天'),
           ),
           ListTile(
+            leading: Icon(Icons.vpn_key),
             title: Text('amazon'),
           ),
         ],
