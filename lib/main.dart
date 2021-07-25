@@ -47,13 +47,22 @@ class _MyHomePageState extends State<MyHomePage> {
             leading: Icon(Icons.vpn_key),
             title: Text('google'),
           ),
+          Divider(
+            color: Colors.blue,
+          ),
           ListTile(
             leading: Icon(Icons.vpn_key),
             title: Text('楽天'),
           ),
+          Divider(
+            color: Colors.blue,
+          ),
           ListTile(
             leading: Icon(Icons.vpn_key),
             title: Text('amazon'),
+          ),
+          Divider(
+            color: Colors.blue,
           ),
         ],
       ),
