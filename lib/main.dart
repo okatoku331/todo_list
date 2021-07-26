@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => NextPage('test')));
+                          builder: (context) => NextPage(titleList[index])));
                 },
               ),
               Divider(
