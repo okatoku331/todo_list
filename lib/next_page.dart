@@ -18,15 +18,27 @@ class _NextPageState extends State<NextPage> {
           children: [
             Row(
               children: [
-                Text('ID'),
-                Text(':'),
+                Container(
+                  child: Text('ID'),
+                  width: 50,
+                ),
+                Container(
+                  child: Text(':'),
+                  width: 20,
+                ),
                 Text('ID名を入力する'),
               ],
             ),
             Row(
               children: [
-                Text('PW'),
-                Text(':'),
+                Container(
+                  child: Text('PW'),
+                  width: 50,
+                ),
+                Container(
+                  child: Text(':'),
+                  width: 20,
+                ),
                 Text('パズワードを入力する'),
               ],
             ),
