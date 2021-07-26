@@ -13,36 +13,40 @@ class _NextPageState extends State<NextPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(),
-        body: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Container(
-                  child: Text('ID'),
-                  width: 50,
-                ),
-                Container(
-                  child: Text(':'),
-                  width: 20,
-                ),
-                Text('ID名を入力する'),
-              ],
-            ),
-            Row(
-              children: [
-                Container(
-                  child: Text('PW'),
-                  width: 50,
-                ),
-                Container(
-                  child: Text(':'),
-                  width: 20,
-                ),
-                Text('パズワードを入力する'),
-              ],
-            ),
-          ],
+        body: Padding(
+          padding: const EdgeInsets.all(30.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Container(
+                    child: Text('ID'),
+                    width: 50,
+                  ),
+                  Container(
+                    child: Text(':'),
+                    width: 20,
+                  ),
+                  Text('ID名を入力する'),
+                ],
+              ),
+              Padding(padding: EdgeInsets.all(10)),
+              Row(
+                children: [
+                  Container(
+                    child: Text('PW'),
+                    width: 50,
+                  ),
+                  Container(
+                    child: Text(':'),
+                    width: 20,
+                  ),
+                  Text('パズワードを入力する'),
+                ],
+              ),
+            ],
+          ),
         ));
   }
 }
