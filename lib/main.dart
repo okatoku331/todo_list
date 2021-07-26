@@ -40,7 +40,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('パスワード.'),
+        title: Text('パスワード'),
       ),
       body: ListView.builder(
         itemCount: titleList.length,
@@ -49,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               ListTile(
                 leading: Icon(Icons.vpn_key),
-                title: Text(titleList[0]),
+                title: Text(titleList[index]),
               ),
               Divider(
                 color: Colors.blue,
