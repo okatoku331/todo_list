@@ -13,6 +13,9 @@ class _NextPageState extends State<NextPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
+      body: Column(
+        children: [Text('ID:ID名を入力する'), Text('PW:パズワードを入力する')],
+      ),
     );
   }
 }
