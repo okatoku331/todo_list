@@ -1,4 +1,8 @@
+//import 'dart:js';
+
 import 'package:flutter/material.dart';
+
+import 'next_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -50,6 +54,10 @@ class _MyHomePageState extends State<MyHomePage> {
               ListTile(
                 leading: Icon(Icons.vpn_key),
                 title: Text(titleList[index]),
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => NextPage()));
+                },
               ),
               Divider(
                 color: Colors.blue,
