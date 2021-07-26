@@ -42,30 +42,20 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text('パスワード.'),
       ),
-      body: ListView(
-        children: [
-          ListTile(
-            leading: Icon(Icons.vpn_key),
-            title: Text(titleList[0]),
-          ),
-          Divider(
-            color: Colors.blue,
-          ),
-          ListTile(
-            leading: Icon(Icons.vpn_key),
-            title: Text(titleList[1]),
-          ),
-          Divider(
-            color: Colors.blue,
-          ),
-          ListTile(
-            leading: Icon(Icons.vpn_key),
-            title: Text(titleList[2]),
-          ),
-          Divider(
-            color: Colors.blue,
-          ),
-        ],
+      body: ListView.builder(
+        itemBuilder: (BuildContext contex, int index) {
+          return Column(
+            children: [
+              ListTile(
+                leading: Icon(Icons.vpn_key),
+                title: Text(titleList[0]),
+              ),
+              Divider(
+                color: Colors.blue,
+              ),
+            ],
+          );
+        },
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
