@@ -15,7 +15,22 @@ class _NextPageState extends State<NextPage> {
         appBar: AppBar(),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [Text('ID:ID名を入力する'), Text('PW:パズワードを入力する')],
+          children: [
+            Row(
+              children: [
+                Text('ID'),
+                Text(':'),
+                Text('ID名を入力する'),
+              ],
+            ),
+            Row(
+              children: [
+                Text('PW'),
+                Text(':'),
+                Text('パズワードを入力する'),
+              ],
+            ),
+          ],
         ));
   }
 }
