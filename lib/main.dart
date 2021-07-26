@@ -55,8 +55,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 leading: Icon(Icons.vpn_key),
                 title: Text(titleList[index]),
                 onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => NextPage()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => NextPage('test')));
                 },
               ),
               Divider(
