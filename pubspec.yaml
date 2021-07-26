@@ -22,4 +22,7 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
-
+  assets:
+    - lib/gazou/q001.png
+    - lib/gazou/a0010.png
+    - lib/gazou/a0011.png
