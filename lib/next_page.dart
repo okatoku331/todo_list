@@ -12,10 +12,10 @@ class _NextPageState extends State<NextPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Column(
-        children: [Text('ID:ID名を入力する'), Text('PW:パズワードを入力する')],
-      ),
-    );
+        appBar: AppBar(),
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [Text('ID:ID名を入力する'), Text('PW:パズワードを入力する')],
+        ));
   }
 }
